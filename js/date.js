@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
 
-    const formatted = `${year}.${month}.${date} (${day}) ${hours}:${minutes}`;
+    const formatted = `${year}.${month}.${date} (${day})`;
     const formatted2 = `${hours}:${minutes}`;
     document.querySelector('.top-date').textContent = formatted;
     document.querySelector('.main-hours').textContent = formatted2;

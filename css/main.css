@@ -120,20 +120,31 @@ li.day figure img { width: 100%; }
     bottom: 1vw;
     padding: 0.5vw 1vw;
     border-radius: 2vw;
-    font-size: 6vw;
+    font-size: 5vw;
     color: #fff;
     background-color: rgba(255, 255, 255, 0.2);
 }
+
 .watch-wrap {
-  position: relative;
-  width: 12vw;
-  height: 12vw;
-  border-radius: 50%;
-  border: 1rem solid #fff;
-  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    position: relative;
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+    background: linear-gradient(45deg, black, #484872);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
-
-/* 공통 */
+.watch-wrap:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(-45deg, black, #484872);
+}
 .watch-wrap span {
   position: absolute;
   left: 50%;
@@ -142,26 +153,13 @@ li.day figure img { width: 100%; }
   transform: translate(-50%, -100%) rotate(0deg);
   border-radius: 2px;
 }
-/* 공통 설정 */
-.watch-wrap span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform-origin: bottom center;
-  transform: translate(-50%, -100%) rotate(0deg);
-  border-radius: 2px;
-}
-
-/* 시침 */
 .hour-hand {
-  width: 0.4vw;
+  width: 0.3vw;
   height: 3.5vw;
-  background: #8EC22D;
+  background: #00aeff;
 }
-
-/* 분침 */
 .minute-hand {
-  width: 0.4vw;
+  width: 0.3vw;
   height: 4.5vw;
   background: #fff;
   box-shadow: 0 0 8px rgba(255,255,255,0.6);
