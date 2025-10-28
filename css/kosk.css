@@ -17,15 +17,72 @@
 .kosk-col ul li + li { margin-top: 1vw; } 
 .kosk-col ul li span { display: flex; font-size: 2vw; color: #fff; } 
 .kosk-col ul li span + span { margin-left: 1vw; } 
-.kosk-col ul li span:first-child { justify-content: center; align-items: center; min-width: 3.5vw; height: 3.5vw; padding: 0.3vw; border-radius: 100%; text-align: center; font-weight: 700; color: #fff; background-color: #f90; } 
-.kosk-bottom { padding: 1vw; border-radius: 1vw; background-color: #f8f8f8; } 
+.kosk-col ul li span:first-child { justify-content: center; align-items: center; min-width: 3.5vw; height: 3.5vw; padding: 0.3vw; border-radius: 100%; text-align: center; font-weight: 700; color: #fff; background-color: #689fff; } 
+.kosk-bottom { padding: 1vw; border-radius: 1vw; background: linear-gradient(-45deg, #34324e, transparent); box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5); } 
 .kosk-bottom strong { display: block; text-align: center; } 
-.kosk-bottom strong, .kosk-bottom strong em { font-size: 9rem; } 
-.kosk-bottom strong em { color: #f00; } 
+.kosk-bottom strong, .kosk-bottom strong em { font-size: 9rem; color: #fff; } 
+.kosk-bottom strong em { color: #ffb3b3; } 
 
 
 /* 유의사항 */
 .kosk-note { margin-bottom: 2vw; } 
 .kosk-wrap.kosk-wrap2 {
     flex-direction: row;
+    justify-content: space-between;
+}
+.kosk-wrap2 .kosk-note {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+.kosk-wrap2 .kosk-note figure {
+    width: 100%;
+}
+.kosk-wrap2 .kosk-note figure img {
+    width: 100%;
+}
+.kosk-wrap2 .kosk-top .kosk-title h2 {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.kosk-wrap2 .kosk-top .kosk-title h2 img {
+    width: 11rem;
+}
+
+.kosk-wrap2 .kosk-contents {
+    width: 55%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+}
+.kosk-wrap2 .kosk-col {
+    margin-bottom: 0;
+}
+.kosk-wrap2 .kosk-col ul {
+    display: flex;
+    flex-direction: column;
+}
+.kosk-wrap2 .kosk-col, .kosk-wrap2 .kosk-col ul {
+    height: 100%;
+}
+.kosk-wrap2 .kosk-col ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2vw;
+    flex: 1;
+}
+.kosk-wrap2 .kosk-col ul li .col {
+    align-items: center;
+}
+.kosk-wrap2 .kosk-col ul li .col span {
+    font-size: 3vw;
+    font-weight: 600;
+}
+.kosk-wrap2 .kosk-col ul li .col .col {
+    width: 4vw;
+    height: 4vw;
+    font-size: 2vw;
 }
