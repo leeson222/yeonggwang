@@ -53,6 +53,7 @@
 }
 .lecture-right.lecture-class-img.basic-box {
     background: url(../img/lecture-test-img01.jpg) center center;
+    background-size: cover;
 }
 
 .lecture-intro01 {
