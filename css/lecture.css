@@ -51,6 +51,9 @@
 .lecture-teacher-img {
     background: url(../img/lecture-text-img.jpg) top center;
 }
+.lecture-right.lecture-class-img.basic-box {
+    background: url(../img/lecture-test-img01.jpg) center center;
+}
 
 .lecture-intro01 {
     overflow: hidden;
