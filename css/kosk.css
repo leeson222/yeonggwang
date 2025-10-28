@@ -13,6 +13,9 @@
 .kosk-con-top i, .kosk-con-top h3 { font-size: 3vw; color: #fff; } 
 
 .kosk-col { gap: 3vw; align-items: center; margin-bottom: 2vw; } 
+.kosk-wrap .kosk-contents .kosk-col.col .kosk-img~ul {
+    width: 100%;
+}
 .kosk-col ul li { align-items: center; padding: 1vw 2vw; border-radius: 1vw; background: linear-gradient(-45deg, #34324e, transparent); box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5); } 
 
 .kosk-col ul li + li { margin-top: 1vw; } 
