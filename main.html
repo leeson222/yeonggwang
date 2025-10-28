@@ -21,11 +21,20 @@
 <body>
     <aside class="top-banner-wrap">
         <div class="top-banner">
-            <div class="top-left-box"><img src="./img/logo-h.png" alt="영광군"></div>
-            <h1>영광군 경로당</h1>
+            <div class="top-banner-logo-wrap">
+                <div class="top-left-box"><img src="./img/logo-h.png" alt="영광군"></div>
+                <h1>영광군 경로당</h1>
+            </div>
+            <div class="live-wrap">
+                <div class="live-icon">방송</div>
+                <div class="live-txt-wrap">
+                    <span class="live-time">11:00</span>
+                    <span class="live-title">추억의 가요 교실</span>
+                </div>
+            </div>
             <div class="top-right-box">
                 <div class="top-date"></div>
-                <p id="loading">위치 정보를 불러오는 중...</p>
+                <!-- <p id="loading">위치 정보를 불러오는 중...</p>
                 <div id="weather" class="top-weather" style="display:none;">
                     <div class="weather-left">
                         <figure id="weather-icon"></figure>
@@ -33,16 +42,8 @@
                         <p id="temp"></p>
                     </div>
                     <div class="weather-right">
-                        <!-- <p id="desc"></p> -->
                     </div>
-                </div>
-                <div class="live-wrap">
-                    <div class="live-icon">방송</div>
-                    <div class="live-txt-wrap">
-                        <span class="live-time">11:00</span>
-                        <span class="live-title">추억의 가요 교실</span>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </aside>
@@ -195,7 +196,15 @@
                                         </ul>
                                     </div>
                                 </article>
-                                <article class="main-box live-box"></article>
+                                <article class="main-box hours-box">
+                                    <div class="watch-wrap">
+                                        <span>
+                                            <span class="hour-hand"></span>
+                                            <span class="minute-hand"></span>
+                                        </span>
+                                    </div>
+                                    <span class="main-hours"></span>
+                                </article>
                             </section>
                         </div>
                     </div>
