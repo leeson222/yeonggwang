@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영광군 스마트 경로당</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <style>
+        body {
+            font-family: Pretendard, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        #loading {
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-wrap">
+        <aside class="top-banner-wrap">
+            <div class="top-banner">
+                <div class="top-left-box"><img src="./img/logo-h.png" alt="영광군"></div>
+                <h1>OO 경로당</h1>
+                <div class="top-right-box">
+                    <div class="top-date"></div>
+                    <p id="loading">위치 정보를 불러오는 중...</p>
+                    <div id="weather" class="top-weather" style="display:none;">
+                        <div class="weather-left">
+                            <figure id="weather-icon"></figure>
+                            <h2 id="city"></h2>
+                            <p id="temp"></p>
+                        </div>
+                        <div class="weather-right">
+                            <!-- <p id="desc"></p> -->
+                        </div>
+                    </div>
+                    <div class="live-wrap">
+                        <div class="live-icon">방송</div>
+                        <div class="live-txt-wrap">
+                            <span class="live-time">11:00</span>
+                            <span class="live-title">추억의 가요 교실</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="main-sec-wrap con col">
+            <section class="left-sec">
+                <!-- <article class="news-box"></article> -->
+                <article class="main-box today-box col">
+                    <div class="today-left">
+                        <figure class="instructor"><img src="./img/instructor2.png"></figure>
+                    </div>
+                    <div class="today-right col">
+                        <div class="today-top-txt">
+                            <h3 class="instructor-name">OOO 강사</h3>
+                            <ul>
+                                <li>1. 보이스 피싱 예방 교육</li>
+                                <li>2. 키오스크 사용 교육</li>
+                                <li>3. GTP 사용 방법 교육</li>
+                            </ul>
+                        </div>
+                        <ul class="col">
+                            <li>
+                                <span>[교육]</span>
+                                <span>14:00~16:00</span>
+                                <span>동영상으로 배우는 보이스 피싱 예방 교육</span>
+                            </li>
+                            <li>
+                                <span>[교육]</span>
+                                <span>16:00~15:00</span>
+                                <span>뜨개 교실(코바늘로 딸기 수세미 뜨기)</span>
+                            </li>
+                            <li>
+                                <span>[강의]</span>
+                                <span>15:30~17:00</span>
+                                <span>기초 체력 단련을 위한 재미있는 율동 배우기</span>
+                            </li>
+                            <li>
+                                <span>[강의]</span>
+                                <span>17:30~18:30</span>
+                                <span>최신 유행 음악 배워 보기(OOO 선생님)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section class="right-sec col">
+                <article class="main-box weather-box col">
+                    <p id="loading">위치 정보를 불러오는 중...</p>
+                    <div id="weather" class="main-weather col" style="display:none;">
+                        <div class="weather-left col">
+                            <div class="weather-left-top col">
+                                <div class="weather-city-wrap">
+                                    <h2 id="city"></h2>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"/></svg></span>
+                                </div>
+                                <p id="desc"></p>
+                            </div>
+                            <p id="temp"></p>
+                        </div>
+                        <div class="weather-right">
+                            <figure id="weather-icon"></figure>
+                        </div>
+                    </div>
+                    <div class="weekly-weather-wrap">
+                        <div class="weekly-title-wrap">
+                            주간 날씨
+                        </div>
+                        <ul class="col">
+                            <li class="day day-mon col">
+                                <figure id="weather-icon"></figure>
+                                <h4 class="day">월</h4>
+                            </li>
+                            <li class="day day-mon col">
+                                <figure id="weather-icon"></figure>
+                                <h4 class="day">화</h4>
+                            </li>
+                            <li class="day day-mon col">
+                                <figure id="weather-icon"></figure>
+                                <h4 class="day">수</h4>
+                            </li>
+                            <li class="day day-mon col">
+                                <figure id="weather-icon"></figure>
+                                <h4 class="day">목</h4>
+                            </li>
+                            <li class="day day-mon col">
+                                <figure id="weather-icon"></figure>
+                                <h4 class="day">금</h4>
+                            </li>
+                            <li class="day day-mon col">
+                                <figure id="weather-icon"></figure>
+                                <h4 class="day">토</h4>
+                            </li>
+                            <li class="day day-mon col">
+                                <figure id="weather-icon"></figure>
+                                <h4 class="day">일</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="main-box live-box"></article>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/comm.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/date.js"></script>
+</body>
+
+</html>

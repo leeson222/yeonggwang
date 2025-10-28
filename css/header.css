@@ -1,0 +1,100 @@
+
+/**************************************************
+탑 배너
+**************************************************/
+#info-main {
+  height: 100vh;
+  background: url(/img/main-bg2.jpg) center/cover no-repeat fixed;
+  /* 오버스캔 대비 살짝 안쪽으로 */
+  padding-left: 1.0417vw;   /* 2rem */
+  padding-right: 1.0417vw;  /* 2rem */
+  /* 상단 배너 높이만큼 패딩은 .top-banner에서 --tb-h로 제어 */
+  padding-top: var(--tb-h, 3.6458vw); /* 7rem */
+}
+
+.top-banner-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0,0,0,0.4);
+}
+
+/* 배너 높이 변수로 관리 → 본문 패딩에 반영 */
+.top-banner {
+  --tb-h: 3.6458vw; /* 7rem */
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.625vw 2.083vw; /* 1.2rem 4rem */
+  min-height: var(--tb-h);
+}
+
+.top-banner h2,
+.top-banner p,
+.top-date,
+.top-banner h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.top-left-box {
+  margin-right: 1.5625vw; /* 3rem */
+}
+
+.top-banner h1 {
+  margin-right: auto;
+  font-size: 1.5625vw; /* 3rem ≈ 30px */
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.top-right-box {
+  display: flex;
+}
+
+.top-banner .top-right-box {
+  align-items: center;
+  gap: 1.5625vw; /* 3rem */
+}
+
+.top-banner .top-weather .weather-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5208vw; /* 1rem */
+}
+
+#weather-icon {
+  display: block;
+  min-height: 1.4063vw; /* 2.7rem */
+}
+#weather-icon img {
+  display: block;
+}
+
+.live-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5208vw; /* 1rem */
+  padding: 0.3646vw 1.0417vw 0.3646vw 0.3646vw; /* 0.7rem 2rem 0.7rem 0.7rem */
+  border-radius: 1.5625vw; /* 3rem */
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.live-wrap .live-icon {
+  padding: 0.2604vw 1.0417vw; /* 0.5rem 2rem */
+  border-radius: 1.0417vw; /* 2rem */
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.7vw;
+  color: #fff;
+  background-color: #ff4545;
+}
+.live-txt-wrap span {
+    font-size: 5rem;
+    color: #fff;
+}
+.live-txt-wrap span + span {
+    margin-left: 2rem;
+}

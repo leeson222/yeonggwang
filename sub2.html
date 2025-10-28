@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영광군 스마트 경로당</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/kosk.css">
+</head>
+<body>
+    <aside class="top-banner-wrap">
+        <div class="top-banner">
+            <div class="top-left-box"><img src="./img/logo-h.png" alt="영광군"></div>
+            <h1>OO 경로당</h1>
+            <div class="top-right-box">
+                <div class="top-date"></div>
+                <p id="loading">위치 정보를 불러오는 중...</p>
+                <div id="weather" class="top-weather" style="display:none;">
+                    <div class="weather-left">
+                        <figure id="weather-icon"></figure>
+                        <h2 id="city"></h2>
+                        <p id="temp"></p>
+                    </div>
+                    <div class="weather-right">
+                        <!-- <p id="desc"></p> -->
+                    </div>
+                </div>
+                <div class="live-wrap">
+                    <div class="live-icon">방송</div>
+                    <div class="live-txt-wrap">
+                        <span class="live-time">11:00</span>
+                        <span class="live-title">추억의 가요 교실</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="kosk-wrap con col">
+        <div class="kosk-top kosk-note col">
+            <div class="kosk-title"><h2>비대면 진료 유의사항 안내</h2></div>
+        </div>
+        <div class="kosk-contents">
+            <div class="kosk-col">
+                <ul>
+                    <li class="col"><span class="col">01</span><span>진료 예약은 20분 단위으로 당일 예약만 가능합니다.</span></li>
+                    <li class="col"><span class="col">02</span><span>예약할 진료 시간 10분 전 까지만 미리 예약이 가능합니다.</span></li>
+                    <li class="col"><span class="col">03</span><span>진료시 처방전이 있다면 방문할 약국을 꼭 선택해주세요.</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/comm.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/date.js"></script>
+</body>
+</html>

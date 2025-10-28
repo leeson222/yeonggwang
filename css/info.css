@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+
+/* ===== TV PRESET (1920x1080 기준, rem → vw 변환) ===== */
+body {
+  background: #000;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/**************************************************
+메인
+**************************************************/
+#info-main {
+  background: url(../img/main-bg3.jpg) bottom center / 100%;
+}
+#main-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0px, -5vw);
+  min-height: 100vh;
+  text-align: center;
+}
+
+#main-txt h2 {
+  font-family: 'GimpoPeaceFoundation', system-ui, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  font-size: 4.6875vw; /* 9rem ≈ 90px */
+  font-weight: 600;
+  line-height: 1.3;
+  color: #fff;
+  text-shadow: 0 0 0.5208vw rgba(0, 0, 0, 0.28); /* 1rem */
+  transform: translate(0, 1.4583vw); /* 2.8rem */
+  letter-spacing: 0.02em;
+}
+
+/* (옵션) 아주 밝은 화면에서 대비 부족하면 아래 주석 해제
+#main-txt::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.12), transparent 60%);
+  pointer-events: none;
+}
+*/

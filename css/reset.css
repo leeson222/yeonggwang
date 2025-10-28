@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+* {box-sizing: border-box; margin: 0; padding: 0; border: 0; word-break: keep-all; font-family: 'pretendard', 'Montserrat', 'sans-serif'; color: #000; letter-spacing: -0.05rem; font-size: 1.6rem; } 
+html { font-size: 62.5%; } 
+html, body { overflow-x: hidden; margin: 0 !important; text-align: unset; } 
+ul, li { list-style: none; } 
+img,main,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block; } 
+h2,h3,h4,h5,p,span,em,strong,a { margin: 0; } 
+a { text-decoration: none; color: inherit; } 
+input { border-radius: 0; -webkit-appearance: none;
+-moz-appearance: none; appearance: none; } 
+em,address { font-style: normal; } 
+body { overflow-x: hidden; background-color: #fff; } 
+button { background: none; border: 0; cursor: pointer; -webkit-appearance: none; } 
+p { margin-block-start: 0; margin-block-end: 0rem; } 
+table td, table th { vertical-align: middle; } 
+

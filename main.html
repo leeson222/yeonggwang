@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영광군 스마트 경로당</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/kosk.css">
+    <link rel="stylesheet" href="css/lecture.css">
+    <link rel="stylesheet" href="css/swiper.css">
+
+
+</head>
+
+<body>
+    <aside class="top-banner-wrap">
+        <div class="top-banner">
+            <div class="top-left-box"><img src="./img/logo-h.png" alt="영광군"></div>
+            <h1>영광군 경로당</h1>
+            <div class="top-right-box">
+                <div class="top-date"></div>
+                <p id="loading">위치 정보를 불러오는 중...</p>
+                <div id="weather" class="top-weather" style="display:none;">
+                    <div class="weather-left">
+                        <figure id="weather-icon"></figure>
+                        <h2 id="city"></h2>
+                        <p id="temp"></p>
+                    </div>
+                    <div class="weather-right">
+                        <!-- <p id="desc"></p> -->
+                    </div>
+                </div>
+                <div class="live-wrap">
+                    <div class="live-icon">방송</div>
+                    <div class="live-txt-wrap">
+                        <span class="live-time">11:00</span>
+                        <span class="live-title">추억의 가요 교실</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main id="main">
+        <section class="slide-wrap">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-item slide-item01">
+                    <article id="info-main">
+                        <div id="main-txt">
+                            <h2><img src="./img/main-txt.png" alt=""></h2>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide slide-item slide-item02">
+                    <div class="main-wrap">
+                        <div class="main-sec-wrap con col">
+                            <section class="left-sec">
+                                <!-- <article class="news-box"></article> -->
+                                <article class="main-box today-box col">
+                                    <div class="main-box-con">
+                                        <div class="main-box-title">
+                                            <span></span>
+                                            <span>강사 프로필</span>
+                                        </div>
+                                        <div class="today-left">
+                                            <figure class="instructor"><img src="./img/instructor2.png"></figure>
+                                            <div class="today-top-txt">
+                                                <h3 class="instructor-name">김지혜 강사</h3>
+                                                <ul>
+                                                    <li><span></span><span>보이스 피싱 예방 교육</span></li>
+                                                    <li><span></span><span>키오스크 사용 교육</span></li>
+                                                    <li><span></span><span>GTP 사용 방법 교육</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-box-con">
+                                        <div class="main-box-title">
+                                            <span></span>
+                                            <span>오늘의 프로그램</span>
+                                        </div>
+                                        <div class="today-right col">
+                                            <ul class="col">
+                                                <li class="edu">
+                                                    <span>교육</span>
+                                                    <span>14:00~16:00</span>
+                                                    <span>동영상으로 배우는 보이스 피싱 예방 교육</span>
+                                                </li>
+                                                <li class="edu">
+                                                    <span>교육</span>
+                                                    <span>16:00~15:00</span>
+                                                    <span>뜨개 교실(코바늘로 딸기 수세미 뜨기)</span>
+                                                </li>
+                                                <li class="class">
+                                                    <span>강의</span>
+                                                    <span>15:30~17:00</span>
+                                                    <span>기초 체력 단련을 위한 재미있는 율동 배우기</span>
+                                                </li>
+                                                <li class="edu">
+                                                    <span>교육</span>
+                                                    <span>16:00~15:00</span>
+                                                    <span>뜨개 교실(코바늘로 딸기 수세미 뜨기)</span>
+                                                </li>
+                                                <li class="class">
+                                                    <span>강의</span>
+                                                    <span>17:30~18:30</span>
+                                                    <span>최신 유행 음악 배워 보기(OOO 선생님)</span>
+                                                </li>
+                                                <li class="edu">
+                                                    <span>교육</span>
+                                                    <span>16:00~15:00</span>
+                                                    <span>뜨개 교실(코바늘로 딸기 수세미 뜨기)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                            </section>
+                            <section class="right-sec col">                                
+                                <div class="main-box-title">
+                                    <span></span>
+                                    <span>오늘의 날씨</span>
+                                </div>
+                                <article class="main-box weather-box col">
+                                    <p id="loading">위치 정보를 불러오는 중...</p>
+                                    <div id="weather" class="main-weather col" style="display:none;">
+                                        <div class="weather-left col">
+                                            <div class="weather-left-top col">
+                                                <div class="weather-city-wrap">
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                            <path
+                                                                d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" />
+                                                        </svg></span>
+                                                    <h2 id="city"></h2>
+                                                </div>
+                                                <p id="temp"></p>
+                                            </div>
+                                            <p id="desc"></p>
+                                        </div>
+                                        <div class="weather-right">
+                                            <figure id="weather-icon"></figure>
+                                        </div>
+                                    </div>
+                                    <div class="weekly-weather-wrap">
+                                        <div class="weekly-title-wrap">
+                                            주간 날씨
+                                        </div>
+                                        <ul class="col">
+                                            <li class="day day-mon col">
+                                                <figure id="weather-icon"></figure>
+                                                <h4 class="day">월</h4>
+                                            </li>
+                                            <li class="day day-mon col">
+                                                <figure id="weather-icon"></figure>
+                                                <h4 class="day">화</h4>
+                                            </li>
+                                            <li class="day day-mon col">
+                                                <figure id="weather-icon"></figure>
+                                                <h4 class="day">수</h4>
+                                            </li>
+                                            <li class="day day-mon col">
+                                                <figure id="weather-icon"></figure>
+                                                <h4 class="day">목</h4>
+                                            </li>
+                                            <li class="day day-mon col">
+                                                <figure id="weather-icon"></figure>
+                                                <h4 class="day">금</h4>
+                                            </li>
+                                            <li class="day day-mon col">
+                                                <figure id="weather-icon"></figure>
+                                                <h4 class="day">토</h4>
+                                            </li>
+                                            <li class="day day-mon col">
+                                                <figure id="weather-icon"></figure>
+                                                <h4 class="day">일</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article class="main-box live-box"></article>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-item slide-item03">
+                    <div class="kosk-wrap con col">
+                        <div class="kosk-top col">
+                            <div class="kosk-title col"><i>👩‍🔬</i>
+                                <h2>비대면 키오스크</h2>
+                            </div>
+                            <p class="kosk-desc">병원에 가지 않아도 <em>미리 예약한 시간</em>에 진료를 받으실 수 있습니다!</p>
+                        </div>
+                        <div class="kosk-contents">
+                            <div class="kosk-con-top col"><i>👍</i>
+                                <h3>어르신께 꼭 필요한 비대면 진료!</h3>
+                            </div>
+                            <div class="kosk-col col">
+                                <figure class="kosk-img"><img src="./img/kosk-img.png" alt="새로닥터"></figure>
+                                <ul>
+                                    <li class="col"><span class="col">01</span><span>고혈압, 당뇨등 정기적으로 드시는 약이 있어 병원에 자주 가는
+                                            어르신</span></li>
+                                    <li class="col"><span class="col">02</span><span>감기, 심리상담 등 단순 진료를 통한 약처방이 필요한
+                                            어르신</span></li>
+                                    <li class="col"><span class="col">03</span><span>원하는 시간에 진료를 받고 싶은 어르신</span></li>
+                                </ul>
+                            </div>
+                            <div class="kosk-bottom"><strong>지금 바로 <em>‘진료시작하기’</em> 버튼을 눌러 진료를 예약하세요!</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-item slide-item04">
+                    <div class="kosk-wrap con col">
+                        <div class="kosk-top kosk-note col">
+                            <div class="kosk-title">
+                                <h2>비대면 진료 유의사항 안내</h2>
+                            </div>
+                        </div>
+                        <div class="kosk-contents">
+                            <div class="kosk-col">
+                                <ul>
+                                    <li class="col"><span class="col">01</span><span>진료 예약은 20분 단위으로 당일 예약만
+                                            가능합니다.</span></li>
+                                    <li class="col"><span class="col">02</span><span>예약할 진료 시간 10분 전 까지만 미리 예약이
+                                            가능합니다.</span></li>
+                                    <li class="col"><span class="col">03</span><span>진료시 처방전이 있다면 방문할 약국을 꼭
+                                            선택해주세요.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-item slide-item05">
+                    <section class="lecture-intro01">
+                        <img src="./img/lecture-intro01.jpg" alt="강사소개">
+                    </section>
+                </div>
+                <div class="swiper-slide slide-item slide-item06">
+                    <section class="lecture-intro01">
+                        <img src="./img/lecture-intro02.jpg" alt="강사소개">
+                    </section>
+                </div>
+                <div class="swiper-slide slide-item slide-item07">
+                    <section class="lecture-transmission-wrap">
+                        <div class="lectire-live"></div>
+                        <div class="lecture-transmission">
+                            <div class="transmission-box transmission-box01"></div>
+                            <div class="transmission-box transmission-box02"></div>
+                            <div class="transmission-box transmission-box03"></div>
+                            <div class="transmission-box transmission-box04"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/swiper.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/comm.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/date.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+.lecture-intro01 {
+    overflow: hidden;
+    height: 100vh;
+}
+.lecture-intro01 img {
+    object-fit: contain;
+    width: 100%;
+}
+.lectire-live {
+    height: 100%;
+    width: 70%;
+    overflow: hidden;
+    background: url(../img/lectire-live.jpg) center center / 100%;
+}
+.lecture-transmission-wrap {
+    display: flex;
+    height: 100vh;
+}
+.lecture-transmission {
+    width: 30%;
+}
+.transmission-box {
+    width: 100%;
+    height: 25%;
+}
+
+.transmission-box01 {background: url(../img/transmission01.jpg) no-repeat center center / 100%;}
+.transmission-box02 {background: url(../img/transmission02.jpg) no-repeat center center / 100%;}
+.transmission-box03 {background: url(../img/transmission03.jpg) no-repeat center center / 100%;}
+.transmission-box04 {background: url(../img/transmission04.jpg) no-repeat center center / 100%;}

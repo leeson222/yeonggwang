@@ -1,0 +1,22 @@
+:root {
+    --rows-left: 2;
+    --rows-right: 2;
+} 
+:root {
+    --vhpx: 100vh;
+    --tb: 63px;
+    --pad: 60px;
+    --gap: 30px;
+}
+
+body {
+    background-color: #242424;
+}
+.col {
+    display: flex;
+}
+.con {
+    height: calc(100vh - var(--banner-h, 0px));
+    margin-top: var(--banner-h);
+    padding: var(--pad); 
+}

@@ -1,0 +1,108 @@
+.kosk-wrap {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10rem;
+}
+.kosk-con-top {
+    gap: 1vw;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+.kosk-top {
+    align-items: center;
+    gap: 2vw;
+}
+.kosk-top .kosk-title {
+    align-items: center;
+    gap: 0.5vw;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    background-color: rgba(255,255,255,0.3);
+}
+.kosk-top .kosk-title i {
+    font-size: 4vw;
+    font-style: normal;
+}
+.kosk-top .kosk-title h2 {
+    font-size: 3vw;
+    color: #fff;
+}
+
+.kosk-top p {
+    font-size: 2.5vw;
+    color: #fff;
+}
+.kosk-top p em {
+    font-size: 2.5vw;
+    font-weight: 800;
+    color: #fff;
+}
+
+.kosk-contents {
+    padding: 8rem 3rem;
+    border-radius: 1vw;
+    background-color: rgba(255,255,255,0.3);
+}
+.kosk-con-top {
+    gap: 1vw;
+    align-items: center;
+}
+.kosk-con-top i, .kosk-con-top h3 {
+    font-size: 3vw;
+    color: #fff;
+}
+
+.kosk-col {
+    gap: 3vw;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+.kosk-col ul li {
+    align-items: center;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    background-color: #f8f8f8;
+}
+.kosk-col ul li + li {
+    margin-top: 1vw;
+}
+.kosk-col ul li span {
+    display: flex;
+    font-size: 2vw;
+}
+.kosk-col ul li span + span {
+    margin-left: 1vw;
+}
+.kosk-col ul li span:first-child {
+    justify-content: center;
+    align-items: center;
+    min-width: 3.5vw;
+    height: 3.5vw;
+    padding: 0.3vw;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: #f90;
+}
+.kosk-bottom {
+    padding: 1vw;
+    border-radius: 1vw;
+    background-color: #f8f8f8;
+}
+.kosk-bottom strong {
+    display: block;
+    text-align: center;
+}
+.kosk-bottom strong, .kosk-bottom strong em {
+    font-size: 9rem;
+}
+.kosk-bottom strong em {
+    color: #f00;
+}
+
+
+/* 유의사항 */
+.kosk-note {
+    margin-bottom: 2vw;
+}
