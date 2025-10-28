@@ -19,22 +19,31 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(updateDateTime, 1000);
 });
 
+let prevAmpm = '';
+let prevTime = '';
+
 function updateClock() {
   const now = new Date();
-  const hours = now.getHours();
-  const minutes = now.getMinutes();
-  const seconds = now.getSeconds();
+  let hours = now.getHours();
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const ampm = hours >= 12 ? '오후' : '오전';
 
-  // 각도 계산
-  const hourDeg = ((hours % 12) + minutes / 60) * 30; // 360 / 12 = 30
-  const minuteDeg = (minutes + seconds / 60) * 6;     // 360 / 60 = 6
+  // 12시간제로 변환
+  hours = hours % 12 || 12;
+  const timeFormatted = `${hours}:${minutes}`;
 
-  const hourHand = document.querySelector('.hour-hand');
-  const minuteHand = document.querySelector('.minute-hand');
+  const amPmEl = document.querySelector('.amPm');
+  const mainHoursEl = document.querySelector('.main-hours');
 
-  if (hourHand && minuteHand) {
-    hourHand.style.transform = `translate(-50%, -100%) rotate(${hourDeg}deg)`;
-    minuteHand.style.transform = `translate(-50%, -100%) rotate(${minuteDeg}deg)`;
+  // ✅ 값이 바뀐 경우에만 DOM 갱신
+  if (amPmEl && ampm !== prevAmpm) {
+    amPmEl.textContent = ampm;
+    prevAmpm = ampm;
+  }
+
+  if (mainHoursEl && timeFormatted !== prevTime) {
+    mainHoursEl.textContent = timeFormatted;
+    prevTime = timeFormatted;
   }
 }
 

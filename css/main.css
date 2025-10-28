@@ -42,7 +42,7 @@ body { color: #fff; -webkit-font-smoothing: antialiased; text-rendering: optimiz
 .today-left { overflow: hidden; display: flex; flex-direction: column; min-width: 29vw; height: 100%; border-radius: 1.0417vw; background-color: rgba(255, 255, 255, 0.2); } 
 .today-top-txt { } 
 .today-top-txt { padding: 1.5625vw; height: calc(50% - 3rem); border-radius: 1.0417vw; } 
-.main-wrap .today-top-txt .instructor-name { color: #fff; background: linear-gradient(45deg, #c74f4f, #250000); } 
+.main-wrap .today-top-txt .instructor-name { color: #fff; background: linear-gradient(45deg, #7a00ff59, #250000); } 
 .today-top-txt ul li + li { margin-top: 4rem; } 
 .today-top-txt ul li span { font-size: 2vw; color: #fff; } 
 .today-top-txt ul li { display: flex; align-items: center; gap: 3rem; padding-left: 3rem; } 
@@ -125,52 +125,18 @@ li.day figure img { width: 100%; }
 }
 .main-hours {
     display: inline-block;
-    position: absolute;
-    right: 1vw;
-    bottom: 1vw;
+    width: 100%;
     padding: 0.5vw 1vw;
-    border-radius: 2vw;
-    font-size: 5vw;
+    border-radius: 1vw;
+    text-align: center;
+    font-size: 7vw;
     color: #fff;
     background-color: rgba(255, 255, 255, 0.2);
 }
-
-.watch-wrap {
-    position: relative;
-    width: 14vw;
-    height: 14vw;
-    border-radius: 50%;
-    background: linear-gradient(45deg, black, #484872);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-}
-.watch-wrap:before {
-    content: "";
+.amPm {
     display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 90%;
-    height: 90%;
-    border-radius: 100%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(-45deg, black, #484872);
-}
-.watch-wrap span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform-origin: bottom center;
-  transform: translate(-50%, -100%) rotate(0deg);
-  border-radius: 2px;
-}
-.hour-hand {
-  width: 0.3vw;
-  height: 3.5vw;
-  background: #00aeff;
-}
-.minute-hand {
-  width: 0.3vw;
-  height: 4.5vw;
-  background: #fff;
-  box-shadow: 0 0 8px rgba(255,255,255,0.6);
+    font-size: 4vw;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1vw;
 }
