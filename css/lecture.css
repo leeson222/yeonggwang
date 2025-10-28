@@ -32,19 +32,24 @@
     font-weight: 700;
 }
 .lecture-left-list li {
-    font-size: 2.4vw;
-    color: #fff;
     display: flex;
-    align-items: center;
     gap: 2vw;
     padding-left: 1vw;
+    font-size: 2.4vw;
+    line-height: 150%;
+    color: #fff;
 }
 .lecture-left-list li + li {
     margin-top: 1vw;
 }
 .lecture-left-list li span { display: inline-block; position: relative; width: 2rem; height: 2rem; border-radius: 100%; background-color: #00a7ff; box-shadow: 0 0 7rem #00a7ff; } 
 .lecture-left-list li span:before { content: ""; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 2rem; height: 2rem; border-radius: 100%; background: linear-gradient(45deg, #00a7ff, #004cff); animation: mainBoxCircle 1.4s linear infinite; } 
-
+.lecture-left-list li span {
+    transform: translate(0px, 1.2vw);
+}
+.lecture-teacher-img {
+    background: url(../img/lecture-text-img.jpg) top center;
+}
 
 .lecture-intro01 {
     overflow: hidden;
