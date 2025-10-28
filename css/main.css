@@ -4,7 +4,7 @@
 body { color: #fff; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; } 
 
 
-.main-wrap { height: 100dvh; background: linear-gradient(45deg, black, #001163); } 
+.main-wrap { height: calc(100dvh - var(--banner-footer-h)); background: linear-gradient(45deg, black, #001163); } 
 
 .main-sec-wrap { gap: var(--gap); min-height: 0; } 
 .main-sec-wrap .left-sec { width: 70%; } 
@@ -62,8 +62,8 @@ body { color: #fff; -webkit-font-smoothing: antialiased; text-rendering: optimiz
     align-items: start;
     justify-content: center;
     gap: 0;
-    border: 7px solid rgb(150 53 53);
-    background-color: #ff000050;
+    border: 7px solid rgb(65 105 163);
+    background-color: #e300ff50;
 }
 .today-right li span { text-align: left; font-size: 1.2vw; color: #fff; } 
 .today-right > ul li .edu-top span:first-child { display: inline-block; margin-right: 2rem; padding: 1.6rem 3rem; border-radius: 5rem; font-weight: 700; white-space: nowrap; color: #fff; background-color: #0553da; } 

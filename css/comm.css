@@ -16,11 +16,45 @@ body {
     display: flex;
 }
 .con {
-    height: calc(100vh - var(--banner-h, 0px));
+    height: calc(100vh - var(--banner-footer-h, 0px));
     margin-top: var(--banner-h);
     padding: var(--pad); 
 }
 
 .basic-box {
     padding: 1vw 2vw; border-radius: 1vw; background: linear-gradient(-45deg, #34324e, transparent); box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
+}
+
+footer#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1vw 2vw;
+}
+footer#footer .f-left, footer#footer .f-right {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+footer#footer span {
+    display: block;
+    font-size: 2vw;
+    color: #fff;
+}
+footer#footer .f-left > span:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+footer#footer .f-right span {
+    font-weight: 700;
+    color: #fff;
+}
+footer#footer .f-left > span:first-child {
+    font-weight: 700;
+    color: #01a9ff;
 }

@@ -13,6 +13,7 @@ body {
 메인
 **************************************************/
 #info-main {
+  height: calc(100dvh - var(--footer-h));
   background: url(../img/main-bg3.jpg) bottom center;
   background-size: cover;
 }
@@ -21,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   transform: translate(0px, -5vw);
-  min-height: 100vh;
+  min-height: calc(100vh - var(--footer-h));
   text-align: center;
 }
 
