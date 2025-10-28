@@ -1,8 +1,53 @@
 @charset 'UTF-8';
 
+/* 강의 전 강사 소개 */
+.lecture-intro01 {
+    margin-top: var(--banner-h);
+    padding: var(--pad);
+}
+.lecture-col.col {
+    gap: 1vw;
+    height: 100%;
+}
+.lecture-col.col > div {
+    width: 50%;
+    padding: 2vw;
+}
+.lecture-left-top {
+    margin-bottom: 3vw;
+}
+.lecture-left-top h2, .lecture-left-top em {
+    color: #fff;
+}
+.lecture-left-top h2 {
+    margin-bottom: 2vw;
+    padding: 0.6vw 2vw;
+    border-radius: 1vw;
+    font-size: 5vw;
+    background: linear-gradient(-45deg, #04003d, #00569c);
+    /* box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5); */
+}
+.lecture-left-top em {
+    font-size: 2.7vw;
+    font-weight: 700;
+}
+.lecture-left-list li {
+    font-size: 2.4vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding-left: 1vw;
+}
+.lecture-left-list li + li {
+    margin-top: 1vw;
+}
+.lecture-left-list li span { display: inline-block; position: relative; width: 2rem; height: 2rem; border-radius: 100%; background-color: #00a7ff; box-shadow: 0 0 7rem #00a7ff; } 
+.lecture-left-list li span:before { content: ""; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 2rem; height: 2rem; border-radius: 100%; background: linear-gradient(45deg, #00a7ff, #004cff); animation: mainBoxCircle 1.4s linear infinite; } 
+
+
 .lecture-intro01 {
     overflow: hidden;
-    height: 100vh;
 }
 .lecture-intro01 img {
     object-fit: contain;

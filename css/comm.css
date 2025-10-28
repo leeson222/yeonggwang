@@ -20,3 +20,7 @@ body {
     margin-top: var(--banner-h);
     padding: var(--pad); 
 }
+
+.basic-box {
+    padding: 1vw 2vw; border-radius: 1vw; background: linear-gradient(-45deg, #34324e, transparent); box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
+}

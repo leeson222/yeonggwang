@@ -14,6 +14,7 @@
 
 .kosk-col { gap: 3vw; align-items: center; margin-bottom: 2vw; } 
 .kosk-col ul li { align-items: center; padding: 1vw 2vw; border-radius: 1vw; background: linear-gradient(-45deg, #34324e, transparent); box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5); } 
+
 .kosk-col ul li + li { margin-top: 1vw; } 
 .kosk-col ul li span { display: flex; font-size: 2vw; color: #fff; } 
 .kosk-col ul li span + span { margin-left: 1vw; } 
