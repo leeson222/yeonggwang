@@ -13,7 +13,8 @@ body {
 메인
 **************************************************/
 #info-main {
-  background: url(../img/main-bg3.jpg) bottom center / 100%;
+  background: url(../img/main-bg3.jpg) bottom center;
+  background-size: cover;
 }
 #main-txt {
   display: flex;
