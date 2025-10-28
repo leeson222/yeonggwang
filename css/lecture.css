@@ -4,6 +4,7 @@
 .lecture-intro01 {
     margin-top: var(--banner-h);
     padding: var(--pad);
+    background: linear-gradient(45deg, black, #001163);
 }
 .lecture-col.col {
     gap: 1vw;
@@ -35,7 +36,7 @@
     display: flex;
     gap: 2vw;
     padding-left: 1vw;
-    font-size: 2.4vw;
+    font-size: 2vw;
     line-height: 150%;
     color: #fff;
 }
