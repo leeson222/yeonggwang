@@ -17,7 +17,6 @@ body {
 }
 .con {
     height: calc(100vh - var(--banner-footer-h, 0px));
-    margin-top: var(--banner-h);
     padding: var(--pad); 
 }
 
@@ -32,6 +31,8 @@ footer#footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    z-index: 1000;
+    background-color: #000;
     width: 100%;
     padding: 1vw 2vw;
 }
