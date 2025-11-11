@@ -2,15 +2,7 @@
 /**************************************************
 탑 배너
 **************************************************/
-#info-main {
-  height: 100vh;
-  background: url(/img/main-bg2.jpg) center/cover no-repeat fixed;
-  /* 오버스캔 대비 살짝 안쪽으로 */
-  padding-left: 1.0417vw;   /* 2rem */
-  padding-right: 1.0417vw;  /* 2rem */
-  /* 상단 배너 높이만큼 패딩은 .top-banner에서 --tb-h로 제어 */
-  padding-top: var(--tb-h, 3.6458vw); /* 7rem */
-}
+
 
 .top-banner-wrap {
   width: 100%;

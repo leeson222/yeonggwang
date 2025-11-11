@@ -6,7 +6,7 @@ body { color: #fffdf8; -webkit-font-smoothing: antialiased; text-rendering: opti
 
 .main-wrap { height: calc(100dvh - var(--banner-footer-h)); background: #fffdf8; } 
 
-.main-sec-wrap { gap: var(--gap); min-height: 0; } 
+.main-sec-wrap { gap: 2vw; min-height: 0; } 
 .main-sec-wrap .left-sec { width: 57%; } 
 .main-sec-wrap .right-sec { gap: 0 !important; width: 43%; } 
 .main-sec-wrap .left-sec,
@@ -18,8 +18,8 @@ body { color: #fffdf8; -webkit-font-smoothing: antialiased; text-rendering: opti
 .main-box-title span:first-child:before { content: ""; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 2rem; height: 2rem; border-radius: 100%; background: linear-gradient(45deg, #00a7ff, #004cff); animation: mainBoxCircle 1.4s linear infinite; } 
 
 @keyframes mainBoxCircle { 
- 0% { width: 2rem; height: 2rem; } 
- 100% { width: 7rem; height: 7rem; opacity: 0; } 
+ 0% { width: 4rem; height: 4rem; } 
+ 100% { width: 8rem; height: 8rem; opacity: 0; } 
  }
 
 .main-sec-wrap .main-box { border-radius: 1.0417vw; background-color: rgba(0,0,0,0.2); backdrop-filter: saturate(120%) blur(0.1042vw); overflow: hidden; background-color: rgba(255,255,255,0.2); } 
@@ -58,7 +58,7 @@ body { color: #fffdf8; -webkit-font-smoothing: antialiased; text-rendering: opti
 .today-right { height: 100%; } 
 .main-box.today-box .today-right .today-top-txt ul li { text-align: left; font-size: 7rem; } 
 .main-box.today-box .today-right .today-top-txt ul li + li { margin-top: 4rem; } 
-.today-right > ul { flex-direction: column; gap: 1vw; margin: 0; padding: 0; list-style: none; justify-content: space-between; height: 100%; } 
+.today-right > ul { flex-direction: column; gap: 2vw; margin: 0; padding: 0; list-style: none; justify-content: space-between; height: 100%; } 
 
 .today-right > ul li { flex: 1 1 0; align-items: center; gap: 1vw; padding: 0.7812vw 1.0417vw; border-radius: 1.0417vw; background: rgba(255,255,255,0.2); } 
 .edu-top {
@@ -79,7 +79,7 @@ body { color: #fffdf8; -webkit-font-smoothing: antialiased; text-rendering: opti
 .today-right > ul li .edu-top span:first-child { display: inline-block; margin-right: 2rem; padding: 1.6rem 3rem; border-radius: 5rem; font-weight: 700; white-space: nowrap; color: #fff; background-color: #0553da; } 
 .today-right li .edu-top span:last-child { display: inline-block; font-size: 2.2vw; font-weight: 700; white-space: nowrap; opacity: .9; transform: translate(0px, 5px); } 
 .today-right li > span { overflow: hidden; display: -webkit-box; min-width: 0; margin-top: 6rem; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.35; font-size: 2.4vw; font-weight: 600; } 
-.today-right > ul .class .edu-top span:first-child { background-color: #ff0000; } 
+.today-right > ul .class .edu-top span:first-child { background-color: #0553da; } 
 
 .today-right li.end span { font-size: 1.4vw; color: #00000070; }
 .today-right li.end > span { margin-top: 2rem; font-size: 1.8vw; }

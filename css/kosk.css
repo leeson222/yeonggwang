@@ -89,7 +89,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 2vw;
+    gap: 1.6vw;
     flex: 1;
 }
 .kosk-wrap2 .kosk-col ul li .col {
@@ -100,8 +100,8 @@
     font-weight: 600;
 }
 .kosk-wrap2 .kosk-col ul li .col .col {
-    width: 4vw;
-    height: 4vw;
-    font-size: 2vw;
+    width: 4.5vw;
+    height: 4.5vw;
+    font-size: 2.5vw;
     color: #fff;
 }

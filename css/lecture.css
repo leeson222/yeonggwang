@@ -14,7 +14,7 @@
     padding: 2vw;
 }
 .lecture-left-top {
-    margin-bottom: 1.7vw;
+    margin-bottom: 3.7vw;
 }
 .lecture-left-top h2, .lecture-left-top em {
     color: #000;
@@ -26,14 +26,14 @@
     /* box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5); */
 }
 .lecture-left-top em {
-    font-size: 2.7vw;
+    font-size: 3vw;
     font-weight: 700;
 }
 .lecture-left-list li {
     display: flex;
     gap: 2vw;
     padding-left: 1vw;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 600;
     line-height: 150%;
     color: #000;
@@ -41,10 +41,10 @@
 .lecture-left-list li + li {
     margin-top: 1vw;
 }
-.lecture-left-list li span { display: inline-block; position: relative; width: 2rem; height: 2rem; border-radius: 100%; background-color: #00a7ff; box-shadow: 0 0 7rem #00a7ff; } 
+.lecture-left-list li span { display: inline-block; position: relative; width: 4rem; height: 4rem; border-radius: 100%; background-color: #00a7ff; box-shadow: 0 0 7rem #00a7ff; } 
 .lecture-left-list li span:before { content: ""; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 2rem; height: 2rem; border-radius: 100%; background: linear-gradient(45deg, #00a7ff, #004cff); animation: mainBoxCircle 1.4s linear infinite; } 
 .lecture-left-list li span {
-    transform: translate(0px, 1.2vw);
+    transform: translate(0px, 1.7vw);
 }
 .lecture-teacher-img {
     background: url(../img/lecture-text-img.jpg) top center;
@@ -69,7 +69,7 @@
 }
 .lecture-transmission-wrap {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - var(--banner-footer-h, 0px));
 }
 .lecture-transmission {
     width: 30%;
