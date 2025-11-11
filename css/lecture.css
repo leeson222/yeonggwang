@@ -2,9 +2,8 @@
 
 /* 강의 전 강사 소개 */
 .lecture-intro01 {
-    margin-top: var(--banner-h);
     padding: var(--pad);
-    background: linear-gradient(45deg, black, #001163);
+    background: #fffdf8;
 }
 .lecture-col.col {
     gap: 1vw;
@@ -15,17 +14,15 @@
     padding: 2vw;
 }
 .lecture-left-top {
-    margin-bottom: 3vw;
+    margin-bottom: 1.7vw;
 }
 .lecture-left-top h2, .lecture-left-top em {
-    color: #fff;
+    color: #000;
 }
 .lecture-left-top h2 {
     margin-bottom: 2vw;
-    padding: 0.6vw 2vw;
     border-radius: 1vw;
     font-size: 5vw;
-    background: linear-gradient(-45deg, #04003d, #00569c);
     /* box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5); */
 }
 .lecture-left-top em {
@@ -37,8 +34,9 @@
     gap: 2vw;
     padding-left: 1vw;
     font-size: 2vw;
+    font-weight: 600;
     line-height: 150%;
-    color: #fff;
+    color: #000;
 }
 .lecture-left-list li + li {
     margin-top: 1vw;

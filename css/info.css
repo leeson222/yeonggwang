@@ -3,7 +3,7 @@
 
 /* ===== TV PRESET (1920x1080 기준, rem → vw 변환) ===== */
 body {
-  background: #000;
+  background: #fffdf8;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

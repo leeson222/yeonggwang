@@ -21,7 +21,7 @@ body {
 }
 
 .basic-box {
-    padding: 1vw 2vw; border-radius: 1vw; background: linear-gradient(-45deg, #34324e, transparent); box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
+    padding: 1vw 2vw; border-radius: 1vw; background: #fff8f4; box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
 }
 
 footer#footer {

@@ -14,7 +14,7 @@
 
 .top-banner-wrap {
   width: 100%;
-  background: rgba(0,0,0,0.4);
+  background: #000;
 }
 
 /* 배너 높이 변수로 관리 → 본문 패딩에 반영 */
