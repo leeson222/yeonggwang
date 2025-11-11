@@ -1,7 +1,7 @@
 .kosk-wrap { flex-direction: column; justify-content: center; gap: 12rem; background: #fffdf8; } 
 .kosk-con-top { gap: 1vw; align-items: center; margin-bottom: 2vw; } 
 .kosk-top { align-items: center; gap: 2vw; } 
-.kosk-top .kosk-title { align-items: center; gap: 0.5vw; padding: 0.5vw 2vw; border-radius: 1vw; background-color: rgba(255,255,255,0.3); } 
+.kosk-top .kosk-title { align-items: center; gap: 0.5vw; padding: 0.5vw 0; border-radius: 1vw; background-color: rgba(255,255,255,0.3); } 
 .kosk-top .kosk-title i { font-size: 4vw; font-style: normal; } 
 .kosk-top .kosk-title h2 { font-size: 3vw; color: #000; } 
 
@@ -18,15 +18,15 @@
 }
 .kosk-col ul li { align-items: center; padding: 1vw 2vw; border-radius: 1vw; background: #e8e8e8; box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5); } 
 
-.kosk-col ul li + li { margin-top: 1vw; } 
+.kosk-col ul li + li { margin-top: 1.7vw; } 
 .kosk-col ul li span, .kosk-col ul li span em { font-size: 2.4vw; color: #000; } 
-.kosk-col ul li span em { font-weight: 700; color: #ff0000; }
+.kosk-col ul li span em { font-weight: 700; color: #DF4300; }
 .kosk-col ul li span + span { margin-left: 1vw; } 
 .kosk-col ul li span:first-child { justify-content: center; align-items: center; min-width: 3.5vw; height: 3.5vw; padding: 0.3vw; border-radius: 100%; text-align: center; font-weight: 700; color: #000; background-color: #005eff; } 
 .kosk-bottom { padding: 2vw; border-top: 5px solid #000; background: #fffdf8; box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5); } 
 .kosk-bottom strong { display: block; text-align: center; } 
 .kosk-bottom strong, .kosk-bottom strong em { font-size: 13rem; color: #000; } 
-.kosk-bottom strong em { color: #ff0000; } 
+.kosk-bottom strong em { color: #DF4300; } 
 
 
 .kosk-wrap3 {
@@ -43,6 +43,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 0;
+    width: 37%;
 }
 .kosk-wrap3 .kosk-note {
     width: 36%;
@@ -66,7 +67,7 @@
 }
 
 .kosk-wrap2 .kosk-contents {
-    width: 55%;
+    width: 63%;
     height: 100%;
     padding: 0;
     background-color: transparent;

@@ -17,8 +17,9 @@ body {
   justify-content: center;
   align-items: center;
   height: calc(100vh - var(--banner-footer-h, 0px));
-  background: url(../img/main-bg3.jpg) bottom center;
+  background: url(../img/main-bg3.jpg);
   background-size: cover;
+  background-position: bottom center;
 }
 #main-txt {
   display: flex;
